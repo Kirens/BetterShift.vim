@@ -38,6 +38,7 @@ let s:dir = '>'
 
 function s:BetterShift_op(dir)
   let s:count = v:count1
+  let s:dir = a:dir
   set opfunc=BetterShift
   return "\<esc>g@"
 endfunction
